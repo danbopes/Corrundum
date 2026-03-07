@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.44
+Date: 3. 7. 2026
+  Major Features:
+    - Fixed Iceboxes not working when one box didn't have a single dry ice. Thanks The-Slick-Nick for the PR
+---------------------------------------------------------------------------------------------------
 Version: 1.0.43
 Date: 8. 19. 2025
   Major Features:
