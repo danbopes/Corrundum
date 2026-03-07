@@ -305,7 +305,7 @@ script.on_nth_tick(53,
           --log(serpent.block(iceable_stacks))
           
           if( dry_ice_total == 0 or table_size(dry_ice_stacks) == 0 or table_size(iceable_stacks) == 0) then
-            goto end_function --No cooling power or things to cool, we done.
+            goto continue_ice_box_loop --No cooling power or things to cool, we done.
           else
              --Substract total_spoilable_stacks from dry ice durability or count, Lets go with item count
             
@@ -391,6 +391,7 @@ script.on_nth_tick(53,
               inventory.insert({ name= refreshed_item["name"],quality = refreshed_item["quality"], count =refreshed_item["count"], spoil_percent=refreshed_item["spoil_percent"] } ) 
             end 
           end
+          ::continue_ice_box_loop::
         end
 
         ::continue_surface_loop::
